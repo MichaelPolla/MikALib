@@ -19,7 +19,7 @@ public class ImageUtils {
      *
      * @param context Application context.
      * @param imageUri Uri of the image.
-     * @return The rotation exprimed in degrees.
+     * @return The rotation in degrees.
      */
     public static int getImageRotation(Context context, Uri imageUri) {
         try {

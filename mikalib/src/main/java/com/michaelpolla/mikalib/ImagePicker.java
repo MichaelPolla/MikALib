@@ -23,6 +23,10 @@ import java.util.List;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class ImagePicker {
+
+    private static final int PICTURE_REQUEST = 1;
+    private Uri cameraImageUri;
+
     private void openImageIntent() {
         // Determine Uri of camera image to save.
         final File root = new File(Environment.getExternalStorageDirectory() + File.separator + "FPConnect" + File.separator);

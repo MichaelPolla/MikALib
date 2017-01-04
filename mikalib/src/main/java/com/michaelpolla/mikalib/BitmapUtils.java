@@ -24,7 +24,7 @@ public class BitmapUtils {
 
     /**
      * Convert a ByteArray to a Bitmap
-     * @param image the byteArray to vonvert.
+     * @param image the byteArray to convert.
      * @return the resulting Bitmap
      */
     public static Bitmap getBitmap(byte[] image) {

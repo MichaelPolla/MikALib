@@ -45,8 +45,12 @@ public class BitmapUtils {
     }
 
 
+    //TODO: check that the permissions are set, otherwise show a message in log (instead of miserably crashing at the BitmapFactory.decodeFile call...)
     /** Methods to decode and resize, if necessary, a selected image, avoiding OutOfMemoryError.
      * Source : http://stackoverflow.com/a/10127787/1975002
+     * IMPORTANT : It needs the READ_EXTERNAL_STORAGE permission.
+     *  Since Android 6.0 (API Level 23), don't forget to also ask for permissions at runtime.
+     *      See : https://developer.android.com/training/permissions/requesting.html
      */
     public static Bitmap decodeAndResizeBitmapFromFile(String filePath, int reqWidth, int reqHeight) {
 

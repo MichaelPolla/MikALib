@@ -45,7 +45,7 @@ public class BitmapUtils {
     }
 
 
-    /* Methods to decode and resize, if necessary, a selected image, avoiding OutOfMemoryError.
+    /** Methods to decode and resize, if necessary, a selected image, avoiding OutOfMemoryError.
      * Source : http://stackoverflow.com/a/10127787/1975002
      */
     public static Bitmap decodeAndResizeBitmapFromFile(String filePath, int reqWidth, int reqHeight) {
@@ -85,5 +85,5 @@ public class BitmapUtils {
         return inSampleSize;
     }
 
-    /* End of Methods to resize select image */
+    /** End of Methods to resize an image */
 }

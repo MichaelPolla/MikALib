@@ -21,8 +21,12 @@ import java.util.List;
  * Image Picker, allowing user to select a picture from a gallery app or by taking one with the camera.
  *
  * Based on : http://stackoverflow.com/a/12347567/1975002 | gallery only : http://stackoverflow.com/a/5309217/1975002
+ *
+ *  IMPORTANT : It needs the WRITE_EXTERNAL_STORAGE permission.
+ *  (READ_EXTERNAL_STORAGE is enough to select pictures from gallery, but not when taking new from camera).
+ *  Since Android 6.0 (API Level 23), don't forget to also ask for permissions at runtime.
+ *  See : https://developer.android.com/training/permissions/requesting.html
  */
-
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class ImagePicker extends AppCompatActivity {
